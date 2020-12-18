@@ -11,12 +11,12 @@ var config = {
 };
 var game = new Phaser.Game(config);
 gameScene.preload = function () {
-    this.load.image('tbackground', 'assets/tbackground.png');
+    this.load.image('tBackground', 'assets/tBackground.png');
 
 };
 
 gameScene.create = function () {
-    this.add.sprite(0, 0, 'tbackground');
+    this.add.sprite(0, 0, 'tBackground');
     bg.setOrigin(0, 0);
 
 }
