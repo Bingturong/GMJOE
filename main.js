@@ -17,7 +17,7 @@ function preload() {
 }
 
 function create() {
-    this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
+    this.add.image(400, 300, 'tBackground');
 }
 
 function update() {
