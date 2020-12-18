@@ -26,13 +26,11 @@ function preload() {
 
 function create() {
     this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
-    platforms = this.physics.add.staticGroup();
-
-    platforms.create(400, 568, 'ground').setScale(2).refreshBody();
-
-    platforms.create(600, 400, 'ground');
-    platforms.create(50, 250, 'ground');
-    platforms.create(750, 220, 'ground');
+    platforms = this.physics.add.staticGroup()
+    platforms.create(0, 600, 'ground')
+    platforms.create(0, 0, 'ground');
+    platforms.create(800, 0, 'wall');
+    platforms.create(0, 0, 'wall');
 }
 
 function update() {
