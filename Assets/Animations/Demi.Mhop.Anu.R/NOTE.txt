@@ -1,3 +1,0 @@
-Frames 001-009:  Warmup
-
-Frames 010-024:  Loop

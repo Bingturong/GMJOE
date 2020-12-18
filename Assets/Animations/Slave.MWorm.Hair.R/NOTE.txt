@@ -1,3 +1,0 @@
-frames 1-22 :  Warmup
-
-frames 23-42:  Loop
