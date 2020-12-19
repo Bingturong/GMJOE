@@ -26,7 +26,8 @@ function preload() {
 
 function create() {
     this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
-    this.add.image(400, 300, 'mj')
+    mj = this.add.image(400, 300, 'mj')
+    mj.setScale(0.2, 0.2);
     anu = this.add.sprite(0, 400, 'Demi.Walk.Anubis.R', '0001.png');
     anu.setScale(0.2, 0.2);
     var frameNames = this.anims.generateFrameNames('cityscene', {
