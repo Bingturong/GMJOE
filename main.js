@@ -24,6 +24,7 @@ function preload() {
 }
 
 function create() {
+    this.add.image(0, 0, 'tiles')
     this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
     const map = this.make.tilemap({ key: 'map' });
     const ts = map.addTilesetImage('t', 'tiles');
