@@ -27,7 +27,7 @@ function create() {
     this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
     const map = this.make.tilemap({ key: 'map' });
     const ts = map.addTilesetImage('t', 'tiles');
-    const platforms = map.createStaticLayer('Walls', ts, 0, 0).setOrigin(0, 0)
+    const platforms = map.createStaticLayer('Walls', ts, 0, 200)
     platforms.setCollisionByExclusion(-1, true);
 
 }
