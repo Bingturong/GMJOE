@@ -17,14 +17,13 @@ var config = {
 var game = new Phaser.Game(config);
 
 function preload() {
-    this.load.image('tBackground', 'Assets/splash/GMJoEsplash.png');
+    this.load.image('tBackground', 'assets/splash/GMJoEsplash.png');
     this.load.image('tiles', 'assets/tilesets/tset.png');
     this.load.tilemapTiledJSON('map', 'assets/tilemaps/t.json');
     this.load.multiatlas('Demi.Walk.Anubis.R', 'Assets/animatedsprites/Demi.Walk.Anubis.R/Demi.Walk.Anubis.R.json', 'Demi.Walk.Anubis.R');
 }
 
 function create() {
-    this.add.image(0, 0, 'tiles')
     this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
     const map = this.make.tilemap({ key: 'map' });
     const ts = map.addTilesetImage('t', 'tiles');
