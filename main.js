@@ -29,7 +29,7 @@ function create() {
     const bg = this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
     const map = this.make.tilemap({ key: 'map' });
     const ts = map.addTilesetImage('t', 'tiles');
-    const platforms = map.createStaticLayer('Walls', tileset, 0, 200);
+    const platforms = map.createStaticLayer('Walls', ts, 0, 0).setOrigin(0, 0)
     platforms.setCollisionByExclusion(-1, true);
 
 }
