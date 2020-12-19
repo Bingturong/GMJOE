@@ -20,17 +20,18 @@ var game = new Phaser.Game(config);
 
 function preload() {
     this.load.image('tBackground', 'Assets/tBackground.png');
-    this.load.image('ground', 'Assets/platform.png');
+    this.load.image('tiles', 'assets/tilesets/tset.png');
+    this.load.tilemapTiledJSON('map', 'assets/tilemaps/t.json');
     this.load.multiatlas('Demi.Walk.Anubis.R', 'Assets/animatedsprites/Demi.Walk.Anubis.R/Demi.Walk.Anubis.R.json', 'Demi.Walk.Anubis.R');
 }
 
 function create() {
-    this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
-    platforms = this.physics.add.staticGroup()
-    platforms.create(0, 600, 'ground')
-    platforms.create(0, 0, 'ground');
-    platforms.create(800, 0, 'wall');
-    platforms.create(0, 0, 'wall');
+    const bg = this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
+    const map = this.make.tilemap({ key: 'map' });
+    const ts = map.addTilesetImage('t', 'tiles');
+    const platforms = map.createStaticLayer('Walls', tileset, 0, 200);
+    platforms.setCollisionByExclusion(-1, true);
+
 }
 
 function update() {
