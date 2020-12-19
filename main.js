@@ -5,8 +5,6 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 300 },
-            debug: false
         }
     },
     scene: {
@@ -26,7 +24,7 @@ function preload() {
 }
 
 function create() {
-    const bg = this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
+    this.add.image(0, 0, 'tBackground').setOrigin(0, 0)
     const map = this.make.tilemap({ key: 'map' });
     const ts = map.addTilesetImage('t', 'tiles');
     const platforms = map.createStaticLayer('Walls', ts, 0, 0).setOrigin(0, 0)
