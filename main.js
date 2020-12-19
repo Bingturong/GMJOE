@@ -17,7 +17,7 @@ var config = {
 var game = new Phaser.Game(config);
 
 function preload() {
-    this.load.image('tBackground', 'assets/splash/GMJoEsplash.png');
+    this.load.image('tBackground', 'assets/GMJoEsplash.png');
     this.load.image('tiles', 'assets/tilesets/tset.png');
     this.load.tilemapTiledJSON('map', 'assets/tilemaps/t.json');
     this.load.multiatlas('Demi.Walk.Anubis.R', 'Assets/animatedsprites/Demi.Walk.Anubis.R/Demi.Walk.Anubis.R.json', 'Demi.Walk.Anubis.R');
