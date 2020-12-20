@@ -2,10 +2,6 @@
     type: Phaser.AUTO,
     width: 800,
     height: 600,
-    scale: {
-        parent: 'game',
-        autoCenter: Phaser.Scale.CENTER_BOTH,
-    },
     physics: {
         default: 'arcade',
         arcade: {
