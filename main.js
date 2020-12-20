@@ -14,9 +14,6 @@
         create: create,
         update: update
     },
-        scale: {
-        mode: Phaser.Scale.FIT,
-    }
 };
 
 var game = new Phaser.Game(config);
