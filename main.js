@@ -1,7 +1,7 @@
 ﻿var config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
+    width: 1024,
+    height: 768,
     physics: {
         default: 'arcade',
         arcade: {
@@ -27,10 +27,6 @@ function preload() {
 function create() {
     mj = this.add.image(400, 500, 'mj')
     mj.setScale(0.2, 0.2);
-    const map = this.make.tilemap({ key: 'map' });
-    const tileset = map.addTilesetImage('tile.70', 'tile70');
-    const platforms = map.createStaticLayer('layer1', tileset, 0, 200);
-    platforms.setCollisionByExclusion(-1, true);
 }
 
 function update() {
