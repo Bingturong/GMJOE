@@ -22,6 +22,9 @@ function preload() {
     this.load.image('tiles', 'assets/tilesets/tset.png');
     this.load.tilemapTiledJSON('map', 'assets/tilemaps/t.json');
     this.load.multiatlas('Demi.Walk.Anubis.R', 'Assets/animatedsprites/Demi.Walk.Anubis.R/Demi.Walk.Anubis.R.json', 'Demi.Walk.Anubis.R');
+    game.scale.pageAlignHorizontally = true;
+    game.scale.pageAlignVertically = true;
+    game.scale.refresh();
 }
 
 function create() {
