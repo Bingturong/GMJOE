@@ -2,6 +2,8 @@
     type: Phaser.AUTO,
     width: 1024,
     height: 768,
+    parent: "game",
+
     physics: {
         default: 'arcade',
         arcade: {
@@ -11,6 +13,9 @@
         preload: preload,
         create: create,
         update: update
+    },
+        scale: {
+        mode: Phaser.Scale.FIT,
     }
 };
 
