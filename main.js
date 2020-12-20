@@ -1,8 +1,12 @@
 ﻿var config = {
     type: Phaser.AUTO,
-    width: 1024 ,
-    height: 768,
-    autoCenter: Phaser.Scale.CENTER_BOTH,
+    scale: {
+        parent: 'GMJoE',
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: 1024,
+        height: 768
+    },
+
     physics: {
         default: 'arcade',
         arcade: {
