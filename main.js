@@ -1,10 +1,9 @@
 ﻿var config = {
     type: Phaser.AUTO,
+    width: 1024,
+    height: 768 ,
     scale: {
-        parent: 'GMJoE',
         autoCenter: Phaser.Scale.CENTER_BOTH,
-        width: 1024,
-        height: 768
     },
 
     physics: {
