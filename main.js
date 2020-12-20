@@ -28,7 +28,7 @@ function preload() {
 }
 
 function create() {
-    mj = this.add.image(0, 0, 'mj').setOrigin(0, 0)
+    mj = this.add.image(400, 500, 'mj')
     mj.setScale(0.2, 0.2);
 }
 
