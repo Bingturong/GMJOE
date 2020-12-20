@@ -29,19 +29,7 @@ function preload() {
 
 function create() {
     mj = this.add.image(0, 0, 'mj').setOrigin(0, 0)
-    mj.setScale(0.1, 0.1);
-    anu = this.add.sprite(0, 400, 'Demi.Walk.Anubis.R', '0001.png');
-    anu.setScale(0.2, 0.2);
-    var frameNames = this.anims.generateFrameNames('cityscene', {
-        start: 1, end: 21, zeroPad: 4,
-        prefix: 'capguy/walk/', suffix: '.png'
-    });
-
-    const map = this.make.tilemap({ key: 'map' });
-    const ts = map.addTilesetImage('t', 'tiles');
-    const platforms = map.createStaticLayer('Walls', ts, 0, 200)
-    platforms.setCollisionByExclusion(-1, true);
-
+    mj.setScale(0.2, 0.2);
 }
 
 function update() {
